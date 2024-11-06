@@ -1,0 +1,203 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    color: #000000;
+    padding: 50px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+}
+
+.logo img {
+    width: 60px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #060606;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.reservas-button {
+    background-color: #066c85;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.reservas-button:hover {
+    background-color: #004d63; 
+    color: #f0f0f0;
+}
+
+.imgChef {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.imgChef img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    object-fit: cover; 
+} 
+
+.about {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.content {
+    max-width: auto;
+    margin: 0  auto;
+}
+
+.section {
+    padding: 30px 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;  
+}
+
+.history {
+    background-color: #f4ecec;
+}
+
+.mission {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.vision {
+    background-color: #f4ecec;
+}
+
+.section h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.section p {
+    font-size: 1em;
+    line-height: 1.8;
+    text-align: center;
+}
+
+
+
+.imgNoticia {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.imgNoticia img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    object-fit: cover; 
+}  
+
+
+/* Footer */
+footer {
+    background-color: #f4ecec;
+    padding: 50px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    color: #333;
+}
+
+.footer-links {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-links div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+
+.footer-links h4:hover {
+    color: #004d63;
+    text-decoration: underline;
+}
+
+.footer-links p a {
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 5px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.footer-links p a:hover {
+    color: #004d63;
+    text-decoration: underline;
+}
+
+.redes-sociales a {
+    text-decoration: none;
+}
+
+.redes-sociales img {
+    width: 30px;
+    transition: filter 0.3s ease;
+}
+
+.redes-sociales img:hover {
+    filter: invert(47%) sepia(20%) saturate(2829%) hue-rotate(153deg) brightness(94%) contrast(88%);
+}
