@@ -1,0 +1,262 @@
+body{
+	background-color: rgb(0, 0, 0);
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: justify;
+    color: #000000;
+    
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+}
+
+.logo img {
+    width: 60px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #060606;
+    font-weight: bold;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.reservas-button {
+    background-color: #066c85;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.reservas-button:hover {
+    background-color: #004d63; 
+    color: #f0f0f0; 
+}
+
+/*  Cuerpo */
+
+/* Estilo para las imágenes fijas */
+.left-image, .right-image {
+    position: fixed;
+    top: 42%;
+    transform: translateY(-50%);
+    z-index: -1;
+    width: 23vw;;
+    height: auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 5); /* Sombra sutil */
+    padding: 20px;
+}
+
+.left-image {
+    left: 0;
+}
+
+.right-image {
+    right: 0;
+}
+
+/* Container para el formulario */
+.container {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 20px;
+    color: #000000;
+}
+
+h1 {
+    font-size: 2em;
+    color: #f6f8fa;  
+    font-weight: bold;
+    padding: 5px;
+}
+
+/* Estilos para el formulario */
+form {
+    background-color: #000000;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+}
+
+/* Estilo para las etiquetas y entradas de texto */
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #f9f9f9;  /* Color de las etiquetas */
+    padding: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+}
+form textarea { 
+ width: 100%;
+ padding: 10px;
+
+}
+
+/* Estilo de las estrellas de valoración */
+.estrellas {
+    font-size: 2em;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.estrellas .estrella {
+    margin: 0 5px;
+    color: #ddd;
+}
+
+.estrellas .estrella:hover,
+.estrellas .estrella.selected {
+    color: #ffcc00; 
+    
+}
+
+
+/* Botón de enviar reseña */
+
+.buttonEnviar{
+    text-align: center; /* Centra el botón dentro de su contenedor */
+}
+
+form button {
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #004d63;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 30%; 
+    
+}
+
+form button:hover {
+    background-color: #066c85;
+}
+
+
+.lista {
+    font-size: 2em;
+    color: #f6f8fa;  
+    font-weight: bold;
+    padding: 20px;
+}
+
+/* Sección de la lista de reseñas */
+
+#reseñas-lista {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.reseña {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.reseña h4 {
+    margin-bottom: 10px;
+}
+
+.reseña p {
+    font-size: 1em;
+    color: #555;
+}
+
+
+/* Estilos generales para el footer */
+footer {
+    background-color: #f4ecec; /* Fondo del footer */
+    padding: 50px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    color: #333;
+}
+
+.footer-links {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-links div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-links h4 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333; 
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+
+.footer-links h4:hover {
+    color: #004d63; 
+    text-decoration: underline; 
+}
+
+.footer-links p a {
+    color: #333; 
+    text-decoration: none;
+    margin-bottom: 5px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+
+.footer-links p a:hover {
+    color: #004d63; 
+    text-decoration: underline; 
+}
+
+.redes-sociales a {
+    text-decoration: none; 
+}
+
+.redes-sociales img {
+    width: 30px;
+    transition: filter 0.3s ease; 
+}
+
+.redes-sociales img:hover {
+    filter: invert(47%) sepia(20%) saturate(2829%) hue-rotate(153deg) brightness(94%) contrast(88%);
+}

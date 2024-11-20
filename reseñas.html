@@ -6,7 +6,7 @@
     <title>490 Restaurant & Grill</title>
     <link rel="icon" type="jpg" href="recursos 490/logo con fondo.png">   <!-- muestra icono en la pestaña -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="reseñas.css">
 
 </head>
 <body>
@@ -27,30 +27,52 @@
     </header>
 
     <!-- Sección principal -->
-    <section class="main-section">
-        <div class="main-image" style="background-image: url('recursos\ 490/servicio de vino.jpg.jpg');"></div>
+
+<div class="container">
+    
        
-    </section>
+    
 
-    <!-- Sección de bienvenida -->
-    <section class="secundary-section">
-        <div class="fondo-oscuro" style="background-color: rgb(0, 0, 0);"></div>
-        <div class="welcome-text">
-            <h1>BIENVENIDOS A 490 RESTAURANT GRILL</h1>
-            <p>Netamente Lambayecano</p>
-            <button onclick="goToAboutPage()">ACERCA DE NOSOTROS</button>
+    <form id="reseñas-form">
+        <h1>Reseñas</h1>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="comentario">Comentario:</label>
+        <textarea id="comentario" name="comentario" rows="4" required></textarea>
+
+        <label for="valoracion">Valoración:</label>
+        <div id="estrellas" class="estrellas">
+            <span class="estrella" data-value="1">☆</span>
+            <span class="estrella" data-value="2">☆</span>
+            <span class="estrella" data-value="3">☆</span>
+            <span class="estrella" data-value="4">☆</span>
+            <span class="estrella" data-value="5">☆</span>
         </div>
-    </section>
 
-    <!-- Sección de plato destacado -->
-    <section class="plato-destacado">
-        <img src="recursos 490/plato-destacado.jpg" alt="Plato destacado">
-    </section>
+         <!-- Imágenes fuera del contenedor -->
+    <img src="recursos 490/reseñas.jpg" class="left-image" alt="Imagen izquierda">
+    <img src="recursos 490/7.jpg" class="right-image" alt="Imagen derecha">
+        
 
- <!-- Footer -->
+    <div class="buttonEnviar">
+        <button type="submit">Enviar Reseña</button>
+    </div>
+    </form>
+    
+    <div id="reseñas-lista">
+        <p class="lista"> Clientes </p>
+    </div>
+    
+    
+</div>
+
+    
+<!-- Footer -->
 <footer>
     <div class="redes-sociales">
-        <a href="https://www.instagram.com/490_restaurant_grill?igsh=MWNyaGg0bmJuazd2ZQ==" >
+        <a href="https://www.instagram.com/490_restaurant_grill?igsh=MWNyaGg0bmJuazd2ZQ==" target="_blank">
             <img src="recursos 490/logo instagram sin fondo.png" alt="Instagram">
         </a>
         <a href="https://www.facebook.com/490parrillaspremium" target="_blank">
@@ -61,7 +83,7 @@
         <div>
             <h4>Acerca de 490</h4>
             <p><a href="reseñas.html">Experiencias</a></p>
-            <p><a href="https://bit.ly/3jVv9mU">Contacto</a></p>
+            <p><a href="https://bit.ly/3jVv9mU" target="_blank">Contacto</a></p>
         </div>
         <div>
             <h4>Más Información</h4>
@@ -75,7 +97,8 @@
         </div>
     </div>
 </footer>
-    <script src = "scrip.js" ></script>
+
+    <script src = "reseñas.js" ></script>
     <script src = "https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" ></script>
     
 </body>

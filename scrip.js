@@ -1,3 +1,6 @@
-function scrollToAbout() {
-    document.querySelector(".footer-links").scrollIntoView({ behavior: "smooth" });
+function goToAboutPage() {
+    
+    window.location.href = 'about.html';  
 }
+
+
